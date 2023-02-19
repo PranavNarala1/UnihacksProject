@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8526d19b8d3651ef5181ce8f53e22b1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8526d19b8d3651ef5181ce8f53e22b1f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8526d19b8d3651ef5181ce8f53e22b1f = L.map(
+                "map_8526d19b8d3651ef5181ce8f53e22b1f",
+                {
+                    center: [25.4484, 78.5685],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d082e2b4cd42a1b06cf976b76936d9ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_ff1af7ef86e274258bacd38b16e58c8e = L.marker(
+                [25.460760300620283, 78.53028023384765],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_3d87492972231e9cc544f2455f433681 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff1af7ef86e274258bacd38b16e58c8e.setIcon(icon_3d87492972231e9cc544f2455f433681);
+        
+    
+        var popup_2ac09c152d2b8b56c024ec732358e301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d07fb33723509a90eacc1451fc4a6313 = $(`<div id="html_d07fb33723509a90eacc1451fc4a6313" style="width: 100.0%; height: 100.0%;">Proposed Hospital</div>`)[0];
+            popup_2ac09c152d2b8b56c024ec732358e301.setContent(html_d07fb33723509a90eacc1451fc4a6313);
+        
+
+        marker_ff1af7ef86e274258bacd38b16e58c8e.bindPopup(popup_2ac09c152d2b8b56c024ec732358e301)
+        ;
+
+        
+    
+    
+            var circle_c7c9709444e4f025de086c9672ead424 = L.circle(
+                [25.460760300620283, 78.53028023384765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_dea717302081d750d00291d16f145334 = L.marker(
+                [25.385582663749158, 78.54500311804847],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_98fd598f8af2b059864b50e48496981b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dea717302081d750d00291d16f145334.setIcon(icon_98fd598f8af2b059864b50e48496981b);
+        
+    
+        var popup_e2debb7c1868a5f96b2c00a7629efc63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_978e534017f8d6396de21be271b517c9 = $(`<div id="html_978e534017f8d6396de21be271b517c9" style="width: 100.0%; height: 100.0%;">Proposed Hospital</div>`)[0];
+            popup_e2debb7c1868a5f96b2c00a7629efc63.setContent(html_978e534017f8d6396de21be271b517c9);
+        
+
+        marker_dea717302081d750d00291d16f145334.bindPopup(popup_e2debb7c1868a5f96b2c00a7629efc63)
+        ;
+
+        
+    
+    
+            var circle_d5e3d5d5f2fe9a523ca198ca4e33d750 = L.circle(
+                [25.385582663749158, 78.54500311804847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_30e51084c2e94cd149ba857dce6a3990 = L.marker(
+                [25.415654637608387, 78.58942242762127],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_97b0b22f3c4667612929bba181cc2536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30e51084c2e94cd149ba857dce6a3990.setIcon(icon_97b0b22f3c4667612929bba181cc2536);
+        
+    
+        var popup_fbf3ece4f0da82078ad4600c53ea3d09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d0ebc3ff78e71d064b45d614b84ca51 = $(`<div id="html_8d0ebc3ff78e71d064b45d614b84ca51" style="width: 100.0%; height: 100.0%;">Proposed Hospital</div>`)[0];
+            popup_fbf3ece4f0da82078ad4600c53ea3d09.setContent(html_8d0ebc3ff78e71d064b45d614b84ca51);
+        
+
+        marker_30e51084c2e94cd149ba857dce6a3990.bindPopup(popup_fbf3ece4f0da82078ad4600c53ea3d09)
+        ;
+
+        
+    
+    
+            var circle_3ba176251e38b15bb9dd1df33a20b2ea = L.circle(
+                [25.415654637608387, 78.58942242762127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_067522e075957edc4921d733955b3939 = L.marker(
+                [25.48219825507111, 78.56659223904222],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_fb792fc75e3758c6f15ae33c5d981cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_067522e075957edc4921d733955b3939.setIcon(icon_fb792fc75e3758c6f15ae33c5d981cd6);
+        
+    
+        var popup_a344f280a65e4dbc590ef74c397217be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24a12bc4752c3fc21882db0e19841e9b = $(`<div id="html_24a12bc4752c3fc21882db0e19841e9b" style="width: 100.0%; height: 100.0%;">Proposed Hospital</div>`)[0];
+            popup_a344f280a65e4dbc590ef74c397217be.setContent(html_24a12bc4752c3fc21882db0e19841e9b);
+        
+
+        marker_067522e075957edc4921d733955b3939.bindPopup(popup_a344f280a65e4dbc590ef74c397217be)
+        ;
+
+        
+    
+    
+            var circle_afc119f4c4f60e069f695b5acc862bf9 = L.circle(
+                [25.48219825507111, 78.56659223904222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_d727ca5c819110c3dff1c0682cf2a0c8 = L.marker(
+                [25.427363083848203, 78.54107900795555],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_4b7220267dac6cf4b18322a9b3cdf98b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d727ca5c819110c3dff1c0682cf2a0c8.setIcon(icon_4b7220267dac6cf4b18322a9b3cdf98b);
+        
+    
+        var popup_18045a28e78e066ce5010bd1f09e8cff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc6615e30b2923f00293da8ff72861ec = $(`<div id="html_dc6615e30b2923f00293da8ff72861ec" style="width: 100.0%; height: 100.0%;">Proposed Hospital</div>`)[0];
+            popup_18045a28e78e066ce5010bd1f09e8cff.setContent(html_dc6615e30b2923f00293da8ff72861ec);
+        
+
+        marker_d727ca5c819110c3dff1c0682cf2a0c8.bindPopup(popup_18045a28e78e066ce5010bd1f09e8cff)
+        ;
+
+        
+    
+    
+            var circle_9cdbf5ba814b93a154e5b99f8d07d134 = L.circle(
+                [25.427363083848203, 78.54107900795555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_30f8018cb7cfd727637a37759d52aec7 = L.marker(
+                [25.4532691, 78.6039809],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_e5074c066064c5f3be6b5297583fe3a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30f8018cb7cfd727637a37759d52aec7.setIcon(icon_e5074c066064c5f3be6b5297583fe3a8);
+        
+    
+        var popup_df52e64a658f4512f7a40a010301de99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_782d38afabf8dd59713010e93e1837fa = $(`<div id="html_782d38afabf8dd59713010e93e1837fa" style="width: 100.0%; height: 100.0%;">Sudha Nursing And Maternity Home | Hospital in Jhansi | Private Hospital in Jhansi | Laproscopic Centre| Medicine |Surgery</div>`)[0];
+            popup_df52e64a658f4512f7a40a010301de99.setContent(html_782d38afabf8dd59713010e93e1837fa);
+        
+
+        marker_30f8018cb7cfd727637a37759d52aec7.bindPopup(popup_df52e64a658f4512f7a40a010301de99)
+        ;
+
+        
+    
+    
+            var circle_4c37cbbff5c054fffe958552bf390e14 = L.circle(
+                [25.4532691, 78.6039809],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000.0, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_5e684a029b063c20925b55c641323820 = L.marker(
+                [25.4644259, 78.6235837],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_0cbc8542fd5c9ec7dd3517924defe4ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e684a029b063c20925b55c641323820.setIcon(icon_0cbc8542fd5c9ec7dd3517924defe4ff);
+        
+    
+        var popup_162dacffdf6d457e86594870478712b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_362e99253f6fa506fe46cc1d2c61b904 = $(`<div id="html_362e99253f6fa506fe46cc1d2c61b904" style="width: 100.0%; height: 100.0%;">Kilkari Hospital (Multispeciality Hospital) and IVF centre</div>`)[0];
+            popup_162dacffdf6d457e86594870478712b9.setContent(html_362e99253f6fa506fe46cc1d2c61b904);
+        
+
+        marker_5e684a029b063c20925b55c641323820.bindPopup(popup_162dacffdf6d457e86594870478712b9)
+        ;
+
+        
+    
+    
+            var circle_339f92afaa7d6eeb2d17cac7cbf863be = L.circle(
+                [25.4644259, 78.6235837],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1965.116279, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_98d5fa72a0e6ce952f0786c9924d6b7b = L.marker(
+                [25.4583135, 78.6153625],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_71fa874bc342e14edbf2946099446379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98d5fa72a0e6ce952f0786c9924d6b7b.setIcon(icon_71fa874bc342e14edbf2946099446379);
+        
+    
+        var popup_831305a301d832f85f80c25ca0189154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df0d2d1790596ce952f467c2489de22f = $(`<div id="html_df0d2d1790596ce952f467c2489de22f" style="width: 100.0%; height: 100.0%;">Kamla Hospital</div>`)[0];
+            popup_831305a301d832f85f80c25ca0189154.setContent(html_df0d2d1790596ce952f467c2489de22f);
+        
+
+        marker_98d5fa72a0e6ce952f0786c9924d6b7b.bindPopup(popup_831305a301d832f85f80c25ca0189154)
+        ;
+
+        
+    
+    
+            var circle_dfb616cbcf3de0d492c5fa4fd158f1a2 = L.circle(
+                [25.4583135, 78.6153625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1011.627907, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_f3bf85dfd00188339d7e730fd606f92b = L.marker(
+                [25.4578424, 78.5786793],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_0d2c15a9f09c1a9a47479e1942f6f75f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3bf85dfd00188339d7e730fd606f92b.setIcon(icon_0d2c15a9f09c1a9a47479e1942f6f75f);
+        
+    
+        var popup_c0edd8d49532743ed02e409ca80da6d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3460931cd43a3776ce7966f158b162f = $(`<div id="html_f3460931cd43a3776ce7966f158b162f" style="width: 100.0%; height: 100.0%;">District Hospital Jhansi</div>`)[0];
+            popup_c0edd8d49532743ed02e409ca80da6d5.setContent(html_f3460931cd43a3776ce7966f158b162f);
+        
+
+        marker_f3bf85dfd00188339d7e730fd606f92b.bindPopup(popup_c0edd8d49532743ed02e409ca80da6d5)
+        ;
+
+        
+    
+    
+            var circle_06aac39c3080de4f2b06906721622a28 = L.circle(
+                [25.4578424, 78.5786793],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 988.372093, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_6452de3075de6771bb194eb1c4c81e30 = L.marker(
+                [25.4466173, 78.5689103],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_2941d101a5b1dad9a8cea8902d1707b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6452de3075de6771bb194eb1c4c81e30.setIcon(icon_2941d101a5b1dad9a8cea8902d1707b2);
+        
+    
+        var popup_fff9007c88f2d58d6d4b4266d5636329 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0c11a8cc75167925b4ec07039e136d3 = $(`<div id="html_b0c11a8cc75167925b4ec07039e136d3" style="width: 100.0%; height: 100.0%;">Vinayak Hospital | Hospital in Jhansi | Best hospital in Jhansi</div>`)[0];
+            popup_fff9007c88f2d58d6d4b4266d5636329.setContent(html_b0c11a8cc75167925b4ec07039e136d3);
+        
+
+        marker_6452de3075de6771bb194eb1c4c81e30.bindPopup(popup_fff9007c88f2d58d6d4b4266d5636329)
+        ;
+
+        
+    
+    
+            var circle_8a1ad17338645ecf24b7ab291dca9621 = L.circle(
+                [25.4466173, 78.5689103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 662.7906977, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_e6d76d065c94ad39f9cbaf8c90edfebc = L.marker(
+                [25.4587863, 78.6158825],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_0c27b20c5a83814136dc5bbb6cad8131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6d76d065c94ad39f9cbaf8c90edfebc.setIcon(icon_0c27b20c5a83814136dc5bbb6cad8131);
+        
+    
+        var popup_a740753f8381f5a354968d81eceecec3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_526282069b9e7ae479025619d08bb5d1 = $(`<div id="html_526282069b9e7ae479025619d08bb5d1" style="width: 100.0%; height: 100.0%;">Meva Chaudhary Memorial Hospital - Best gynaecologist hospital in jhansi | Orthopaedic center |</div>`)[0];
+            popup_a740753f8381f5a354968d81eceecec3.setContent(html_526282069b9e7ae479025619d08bb5d1);
+        
+
+        marker_e6d76d065c94ad39f9cbaf8c90edfebc.bindPopup(popup_a740753f8381f5a354968d81eceecec3)
+        ;
+
+        
+    
+    
+            var circle_e7118ac1242eb7b6ae24de39d9bc55f4 = L.circle(
+                [25.4587863, 78.6158825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 476.744186, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_21ab42402bdba7db5a3b9d9a454e2203 = L.marker(
+                [25.4395095, 78.5586874],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_c76eebb7059a26f81e7167b51128746a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21ab42402bdba7db5a3b9d9a454e2203.setIcon(icon_c76eebb7059a26f81e7167b51128746a);
+        
+    
+        var popup_57c6902fcc7ec690d04064625e00f9cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cee239bb7315c275015b6b7afb439135 = $(`<div id="html_cee239bb7315c275015b6b7afb439135" style="width: 100.0%; height: 100.0%;">North Central Railway Hospital Jhansi</div>`)[0];
+            popup_57c6902fcc7ec690d04064625e00f9cd.setContent(html_cee239bb7315c275015b6b7afb439135);
+        
+
+        marker_21ab42402bdba7db5a3b9d9a454e2203.bindPopup(popup_57c6902fcc7ec690d04064625e00f9cd)
+        ;
+
+        
+    
+    
+            var circle_a3e3d8861773a7f57c17ce2bd32a1683 = L.circle(
+                [25.4395095, 78.5586874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 465.1162791, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_e17f1e6f7cbafd618335e20ffadf8e15 = L.marker(
+                [25.4594748, 78.616856],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_010affadb9135133addbf69d3b6c2123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e17f1e6f7cbafd618335e20ffadf8e15.setIcon(icon_010affadb9135133addbf69d3b6c2123);
+        
+    
+        var popup_cfdae705bada12434c6800cd6b93bca7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_432d24c5b6eb09841e3e2a559ceea8fe = $(`<div id="html_432d24c5b6eb09841e3e2a559ceea8fe" style="width: 100.0%; height: 100.0%;">Raghvendra Hospital & Laparoscopic Surgery Centre</div>`)[0];
+            popup_cfdae705bada12434c6800cd6b93bca7.setContent(html_432d24c5b6eb09841e3e2a559ceea8fe);
+        
+
+        marker_e17f1e6f7cbafd618335e20ffadf8e15.bindPopup(popup_cfdae705bada12434c6800cd6b93bca7)
+        ;
+
+        
+    
+    
+            var circle_3538682ebb38df2278085ab314a00cc5 = L.circle(
+                [25.4594748, 78.616856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 418.60465120000003, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_baeec49b4b10d6a7fe92c8bdd28c360b = L.marker(
+                [25.4676493, 78.6249487],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_1bf87da3b5bb089856c8e61849eed928 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_baeec49b4b10d6a7fe92c8bdd28c360b.setIcon(icon_1bf87da3b5bb089856c8e61849eed928);
+        
+    
+        var popup_9c0c91073b5c13379d6f2525803bdb37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1227c3ac0036fed60a38da4f7aa6ef5f = $(`<div id="html_1227c3ac0036fed60a38da4f7aa6ef5f" style="width: 100.0%; height: 100.0%;">Bundelkhand Super Specialty Hospital - Best Hospital | Best Multispecialty Hospital in Jhansi</div>`)[0];
+            popup_9c0c91073b5c13379d6f2525803bdb37.setContent(html_1227c3ac0036fed60a38da4f7aa6ef5f);
+        
+
+        marker_baeec49b4b10d6a7fe92c8bdd28c360b.bindPopup(popup_9c0c91073b5c13379d6f2525803bdb37)
+        ;
+
+        
+    
+    
+            var circle_f3bf15b61b9c668561b4813e4ed028c8 = L.circle(
+                [25.4676493, 78.6249487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 406.97674420000004, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_aa07d6e5d6f7f3f548fd7574e2e0c53a = L.marker(
+                [25.4270761, 78.5770387],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_a1976eebc8fcf6a0ff56d0cd5f415022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa07d6e5d6f7f3f548fd7574e2e0c53a.setIcon(icon_a1976eebc8fcf6a0ff56d0cd5f415022);
+        
+    
+        var popup_bd783707c2f3277d6a350834881fc049 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f23098e0b11cebdf79df0804f2ba6bb = $(`<div id="html_9f23098e0b11cebdf79df0804f2ba6bb" style="width: 100.0%; height: 100.0%;">Military Hospital Jhansi</div>`)[0];
+            popup_bd783707c2f3277d6a350834881fc049.setContent(html_9f23098e0b11cebdf79df0804f2ba6bb);
+        
+
+        marker_aa07d6e5d6f7f3f548fd7574e2e0c53a.bindPopup(popup_bd783707c2f3277d6a350834881fc049)
+        ;
+
+        
+    
+    
+            var circle_6cc53527b38ae8e10accf79e2bec568b = L.circle(
+                [25.4270761, 78.5770387],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 360.4651163, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_ae2f4d0abce468a67abe712f53f42f0f = L.marker(
+                [25.4481157, 78.5780002],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_a461baa61ed3d5fdcc24daeca5100c2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae2f4d0abce468a67abe712f53f42f0f.setIcon(icon_a461baa61ed3d5fdcc24daeca5100c2b);
+        
+    
+        var popup_8a0c0833451b764c5415285d7862498a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b13aea8ff7f4db046b54623b4528f940 = $(`<div id="html_b13aea8ff7f4db046b54623b4528f940" style="width: 100.0%; height: 100.0%;">Jhokan Bag Hospital</div>`)[0];
+            popup_8a0c0833451b764c5415285d7862498a.setContent(html_b13aea8ff7f4db046b54623b4528f940);
+        
+
+        marker_ae2f4d0abce468a67abe712f53f42f0f.bindPopup(popup_8a0c0833451b764c5415285d7862498a)
+        ;
+
+        
+    
+    
+            var circle_5ce946e9beb0e1d8881bccfd5669e602 = L.circle(
+                [25.4481157, 78.5780002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 290.6976744, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_d5feae9f6398ad3da8aefc1caeb7525a = L.marker(
+                [25.4576315, 78.6136425],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_924c0166a56af4677ed76f5a42b5af95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5feae9f6398ad3da8aefc1caeb7525a.setIcon(icon_924c0166a56af4677ed76f5a42b5af95);
+        
+    
+        var popup_6e0416cc843c4f2ec765cb9acad48b8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f9fb4b186295fae57e9a6f17b2305e2 = $(`<div id="html_4f9fb4b186295fae57e9a6f17b2305e2" style="width: 100.0%; height: 100.0%;">Sanjeevani ICU & Multispeciality Hospital - Best ICU in Jhansi</div>`)[0];
+            popup_6e0416cc843c4f2ec765cb9acad48b8a.setContent(html_4f9fb4b186295fae57e9a6f17b2305e2);
+        
+
+        marker_d5feae9f6398ad3da8aefc1caeb7525a.bindPopup(popup_6e0416cc843c4f2ec765cb9acad48b8a)
+        ;
+
+        
+    
+    
+            var circle_1577b840e9631abafe8a3102450225e5 = L.circle(
+                [25.4576315, 78.6136425],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 232.5581395, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_3ff57961c804beed40af134ef2badc87 = L.marker(
+                [25.4467785, 78.565958],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_3be20837b7056eb7ab3c77bae73b4b75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ff57961c804beed40af134ef2badc87.setIcon(icon_3be20837b7056eb7ab3c77bae73b4b75);
+        
+    
+        var popup_ee9b9444375b4e70c7340dd7912c6cc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51ef936408818331ccf93d331db8846f = $(`<div id="html_51ef936408818331ccf93d331db8846f" style="width: 100.0%; height: 100.0%;">L.R.M Jain Hospital</div>`)[0];
+            popup_ee9b9444375b4e70c7340dd7912c6cc9.setContent(html_51ef936408818331ccf93d331db8846f);
+        
+
+        marker_3ff57961c804beed40af134ef2badc87.bindPopup(popup_ee9b9444375b4e70c7340dd7912c6cc9)
+        ;
+
+        
+    
+    
+            var circle_2d3b5fb8d7bd7bca8a73b11bc9e1dfd0 = L.circle(
+                [25.4467785, 78.565958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 186.0465116, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_fa5304c272d017bfdb347f0f9bed5213 = L.marker(
+                [25.4584709, 78.5788275],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_f3ec453d04f51abf43efb57dcda39401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa5304c272d017bfdb347f0f9bed5213.setIcon(icon_f3ec453d04f51abf43efb57dcda39401);
+        
+    
+        var popup_8c4770fba7ed04100eea7cd78c7c475f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef905497378e8afc2723d32c10ed2f42 = $(`<div id="html_ef905497378e8afc2723d32c10ed2f42" style="width: 100.0%; height: 100.0%;">Government City Hospital Jhansi</div>`)[0];
+            popup_8c4770fba7ed04100eea7cd78c7c475f.setContent(html_ef905497378e8afc2723d32c10ed2f42);
+        
+
+        marker_fa5304c272d017bfdb347f0f9bed5213.bindPopup(popup_8c4770fba7ed04100eea7cd78c7c475f)
+        ;
+
+        
+    
+    
+            var circle_f58219137507e951cc8f118c5bbde547 = L.circle(
+                [25.4584709, 78.5788275],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 81.39534884000001, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_2c5af33efd98e36efef748fde34b6945 = L.marker(
+                [25.4596344, 78.6093659],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_db4ed885bacfdea05c629b8c1cb1b6a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c5af33efd98e36efef748fde34b6945.setIcon(icon_db4ed885bacfdea05c629b8c1cb1b6a4);
+        
+    
+        var popup_8ece2e1cae3319d58e3859e2948a5ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_555dda5eeb73200519fd8658d6722fa9 = $(`<div id="html_555dda5eeb73200519fd8658d6722fa9" style="width: 100.0%; height: 100.0%;">Chaitanya Hospital</div>`)[0];
+            popup_8ece2e1cae3319d58e3859e2948a5ac5.setContent(html_555dda5eeb73200519fd8658d6722fa9);
+        
+
+        marker_2c5af33efd98e36efef748fde34b6945.bindPopup(popup_8ece2e1cae3319d58e3859e2948a5ac5)
+        ;
+
+        
+    
+    
+            var circle_049ca80e223ae43433c0365bc5ba175b = L.circle(
+                [25.4596344, 78.6093659],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 81.39534884000001, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_928903abe778af9985928ae94dc1de59 = L.marker(
+                [25.459884, 78.617287],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_b3fe71cf9d4533069a5e68791acc251b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_928903abe778af9985928ae94dc1de59.setIcon(icon_b3fe71cf9d4533069a5e68791acc251b);
+        
+    
+        var popup_9a07b8dcc2f31d453d5bb47b7e59738f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c0874cb104f764a20bd5012628c3832 = $(`<div id="html_8c0874cb104f764a20bd5012628c3832" style="width: 100.0%; height: 100.0%;">Shankar Hospital Jhansi</div>`)[0];
+            popup_9a07b8dcc2f31d453d5bb47b7e59738f.setContent(html_8c0874cb104f764a20bd5012628c3832);
+        
+
+        marker_928903abe778af9985928ae94dc1de59.bindPopup(popup_9a07b8dcc2f31d453d5bb47b7e59738f)
+        ;
+
+        
+    
+    
+            var circle_944694808087e950f25f395248617272 = L.circle(
+                [25.459884, 78.617287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69.76744186, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_58c31e9c48d113ca29677ea2f91e54f3 = L.marker(
+                [25.4722749, 78.5616623],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_1e6fc2238dcc72771f3f197259d3d6cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58c31e9c48d113ca29677ea2f91e54f3.setIcon(icon_1e6fc2238dcc72771f3f197259d3d6cf);
+        
+    
+        var popup_30c3ee015c69cbf18944af0113f6daf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b00ac57cf02f3eb9ac1c5c77518978be = $(`<div id="html_b00ac57cf02f3eb9ac1c5c77518978be" style="width: 100.0%; height: 100.0%;">K L Hospital</div>`)[0];
+            popup_30c3ee015c69cbf18944af0113f6daf1.setContent(html_b00ac57cf02f3eb9ac1c5c77518978be);
+        
+
+        marker_58c31e9c48d113ca29677ea2f91e54f3.bindPopup(popup_30c3ee015c69cbf18944af0113f6daf1)
+        ;
+
+        
+    
+    
+            var circle_4f8f404a78ec5f186d914d20067e81dd = L.circle(
+                [25.4722749, 78.5616623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 58.13953488000001, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_aff2641ea25fd03a45043cb1fe69bb43 = L.marker(
+                [25.4786802, 78.5629349],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_37aa440b13e753e29a5290f44d31614b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aff2641ea25fd03a45043cb1fe69bb43.setIcon(icon_37aa440b13e753e29a5290f44d31614b);
+        
+    
+        var popup_476566b4c98d885c81e5c11c38895c85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c39c44defb96239fff67d1fadbe83f3e = $(`<div id="html_c39c44defb96239fff67d1fadbe83f3e" style="width: 100.0%; height: 100.0%;">Sharda Hospital</div>`)[0];
+            popup_476566b4c98d885c81e5c11c38895c85.setContent(html_c39c44defb96239fff67d1fadbe83f3e);
+        
+
+        marker_aff2641ea25fd03a45043cb1fe69bb43.bindPopup(popup_476566b4c98d885c81e5c11c38895c85)
+        ;
+
+        
+    
+    
+            var circle_93fe3f01670099aee77019f800d59486 = L.circle(
+                [25.4786802, 78.5629349],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46.51162791, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_e45f8e056b2683e89dc729aa3c771c48 = L.marker(
+                [25.4568491, 78.6151788],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_38b093652007d0dd48aeba11f1d4d865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e45f8e056b2683e89dc729aa3c771c48.setIcon(icon_38b093652007d0dd48aeba11f1d4d865);
+        
+    
+        var popup_92428d5518af88f37dd8309a292a3200 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aced097771234f0d4dd584b67c2dd464 = $(`<div id="html_aced097771234f0d4dd584b67c2dd464" style="width: 100.0%; height: 100.0%;">Geeta Memorial Hospital Jhansi</div>`)[0];
+            popup_92428d5518af88f37dd8309a292a3200.setContent(html_aced097771234f0d4dd584b67c2dd464);
+        
+
+        marker_e45f8e056b2683e89dc729aa3c771c48.bindPopup(popup_92428d5518af88f37dd8309a292a3200)
+        ;
+
+        
+    
+    
+            var circle_a6afa2dbf39ad112b3a474fbce3da484 = L.circle(
+                [25.4568491, 78.6151788],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.25581395, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var marker_239115f40e7e6b3267788b8f4c47b3ed = L.marker(
+                [25.4486592, 78.569812],
+                {}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+    
+            var icon_1b135127cc3c6bc0e5c4e759694f4993 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-heart-empty", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_239115f40e7e6b3267788b8f4c47b3ed.setIcon(icon_1b135127cc3c6bc0e5c4e759694f4993);
+        
+    
+        var popup_d42fae9054d19ec03fdd1594fb91cde5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cc92c11fa6326b4451f9df336962c8b = $(`<div id="html_2cc92c11fa6326b4451f9df336962c8b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_d42fae9054d19ec03fdd1594fb91cde5.setContent(html_2cc92c11fa6326b4451f9df336962c8b);
+        
+
+        marker_239115f40e7e6b3267788b8f4c47b3ed.bindPopup(popup_d42fae9054d19ec03fdd1594fb91cde5)
+        ;
+
+        
+    
+    
+            var circle_0b3cdcf93f34de99b5b2cfed3d0da04a = L.circle(
+                [25.4486592, 78.569812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_8526d19b8d3651ef5181ce8f53e22b1f);
+        
+</script>
+</html>
